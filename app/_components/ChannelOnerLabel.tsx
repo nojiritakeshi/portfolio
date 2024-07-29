@@ -7,7 +7,7 @@ import { CalendarMonth } from '@mui/icons-material';
 
 const ChannelOnerLabel: React.FC = () => {
   return (
-    <div className="flex items-center  mb-4 justify-between ">
+    <div className="flex items-center justify-between ">
       <div className="flex items-center space-x-4">
         <NextLink href="https://x.com/jsotakebmx" target="_blank">
           <AvatarIcon src="/twitterIcon.jpg" />

@@ -6,15 +6,14 @@ interface VideoPlayerProps {
 
 const VideoPlayer: React.FC<VideoPlayerProps> = ({ videoUrl }) => {
   return (
-    <div className="w-full">
+    <div className="w-full iframe-wrapper">
       <iframe
-        className="w-full h-96 rounded-xl"
+        className="rounded-xl"
         src={videoUrl}
         title="YouTube video player"
         referrerPolicy="strict-origin-when-cross-origin"
         allowFullScreen
       ></iframe>
-      {/* <iframe src={videoUrl} className="w-full h-full rounded-xl" /> */}
     </div>
   );
 };
