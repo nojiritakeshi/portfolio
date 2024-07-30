@@ -36,7 +36,7 @@ export default function Home() {
                 <div>
                   <h2 className="py-4 text-xl font-bold">2件のケイレキ</h2>
                   <div className="sm:flex">
-                    <AvatarIcon src="https://picsum.photos/id/237/200/300" />
+                    <AvatarIcon src="/job_programmer.png" />
                     <CommentInput />
                   </div>
                   <WrittenComments />

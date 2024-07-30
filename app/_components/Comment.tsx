@@ -21,11 +21,7 @@ const Comment: React.FC<CommentProps> = ({
       <Image
         height={32}
         width={32}
-        src={
-          avatarUrl
-            ? `${BASE_PATH}${avatarUrl}`
-            : 'https://picsum.photos/id/237/200/300'
-        }
+        src={`${BASE_PATH}${avatarUrl}`}
         alt="Avatar"
         className="w-10 h-10 object-cover rounded-full"
       />

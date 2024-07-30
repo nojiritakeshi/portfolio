@@ -11,10 +11,7 @@ const WrittenComments: React.FC = () => {
       {comments.length > 0 &&
         comments.map((comment, index) => (
           <div key={index}>
-            <Comment
-              avatarUrl="https://picsum.photos/id/237/200/300"
-              comment={comment}
-            />
+            <Comment avatarUrl="/job_programmer.png" comment={comment} />
           </div>
         ))}
     </div>
