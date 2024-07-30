@@ -7,11 +7,11 @@ export const AvatarIcon = ({
   src,
   size = 40
 }: {
-  src: string;
+  src?: string;
   size?: number;
 }) => (
   <Image
-    src={`${BASE_PATH}${src}`}
+    src={src ? `${BASE_PATH}${src}` : 'https://picsum.photos/id/237/200/300'}
     alt="Avatar"
     height={size}
     width={size}

@@ -4,7 +4,7 @@ import config from '../../next.config.mjs';
 const BASE_PATH = config.basePath ? config.basePath : '';
 
 type CommentProps = {
-  avatarUrl: string;
+  avatarUrl?: string;
   username?: string;
   comment: string;
   tags?: string[];
@@ -21,7 +21,11 @@ const Comment: React.FC<CommentProps> = ({
       <Image
         height={32}
         width={32}
-        src={`${BASE_PATH}${avatarUrl}`}
+        src={
+          avatarUrl
+            ? `${BASE_PATH}${avatarUrl}`
+            : 'https://picsum.photos/id/237/200/300'
+        }
         alt="Avatar"
         className="w-10 h-10 object-cover rounded-full"
       />
