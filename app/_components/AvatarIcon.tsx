@@ -1,5 +1,7 @@
 import Image from 'next/image';
 import React from 'react';
+import config from '../../next.config.mjs';
+const BASE_PATH = config.basePath ? config.basePath : '';
 
 export const AvatarIcon = ({
   src,
@@ -9,7 +11,7 @@ export const AvatarIcon = ({
   size?: number;
 }) => (
   <Image
-    src={src}
+    src={`${BASE_PATH}${src}`}
     alt="Avatar"
     height={size}
     width={size}

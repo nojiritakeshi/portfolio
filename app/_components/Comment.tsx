@@ -1,5 +1,7 @@
 import React from 'react';
-import NextImg from 'next/image';
+import Image from 'next/image';
+import config from '../../next.config.mjs';
+const BASE_PATH = config.basePath ? config.basePath : '';
 
 type CommentProps = {
   avatarUrl: string;
@@ -16,10 +18,10 @@ const Comment: React.FC<CommentProps> = ({
 }) => {
   return (
     <div className="flex items-start space-x-3 my-3">
-      <NextImg
+      <Image
         height={32}
         width={32}
-        src={avatarUrl}
+        src={`${BASE_PATH}${avatarUrl}`}
         alt="Avatar"
         className="w-10 h-10 object-cover rounded-full"
       />

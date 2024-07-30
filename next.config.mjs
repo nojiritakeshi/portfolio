@@ -4,8 +4,8 @@ const nextConfig = {
   images: {
     domains: ['picsum.photos']
   },
-  output: 'export',
-  basePath: isProd ? '/portfolio' : ''
+  output: isProd ? 'export' : '',
+  basePath: isProd ? '/public' : ''
 };
 
 export default nextConfig;

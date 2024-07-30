@@ -1,6 +1,8 @@
 import Image from 'next/image';
 import NextLink from 'next/link';
 import OpenInNew from '@mui/icons-material/OpenInNew';
+import config from '../../next.config.mjs';
+const BASE_PATH = config.basePath ? config.basePath : '';
 
 type MyProjectCardProps = {
   iconPath: string;
@@ -21,7 +23,7 @@ const MyProjectCard: React.FC<MyProjectCardProps> = ({
     <div className="mb-3 p-4 bg-white rounded-lg shadow-md">
       <div className="flex items-center space-x-2">
         <Image
-          src={iconPath}
+          src={`${BASE_PATH}${iconPath}`}
           alt="Avatar"
           height={40}
           width={40}
