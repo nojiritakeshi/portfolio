@@ -16,7 +16,7 @@ export default function Home() {
   const webEngineerComment =
     '入社してから現在までフルスタックエンジニアとして、webから誰でもECサイトを簡単に構築し展開できる自社サービスの開発を行ってきました。また、サブリーダとして新卒の育成や開発メンバーへの設計・実装・テストにおける指導を経験しました。';
   return (
-    <main className="pt-16">
+    <main className="pt-16 xl:px-32">
       <div className="w-hull text-sm ml-3">
         <div className="p-4">
           <div className="md:flex w-hull">
@@ -35,7 +35,7 @@ export default function Home() {
               <CommentProvider>
                 <div>
                   <h2 className="py-4 text-xl font-bold">2件のケイレキ</h2>
-                  <div className="flex w-full">
+                  <div className="sm:flex">
                     <AvatarIcon src="https://picsum.photos/id/237/200/300" />
                     <CommentInput />
                   </div>

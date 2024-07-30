@@ -20,7 +20,7 @@ const CommentInput: React.FC = () => {
   };
 
   return (
-    <div className="m-2 w-full">
+    <div className="sm:m-2 w-11/12">
       <input
         className="focus:outline-none border-b transition transform duration-500 focus:border-black focus:border-b-2 w-full p-1"
         placeholder="コメントする"
