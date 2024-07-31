@@ -12,7 +12,7 @@ import WrittenComments from './_components/WrittenComments';
 
 export default function Home() {
   const fireFighterComment =
-    '2017年~2022年3月末までの5年間、消防士として約5年間働いていました。細部にこだわること、妥協しないこと、チームにおけるコミュニケーションなどは転職した現在にも役立っていると感じています。';
+    '2017年~2022年3月末までの約5年間、消防士として働いていました。細部にこだわること、妥協しないこと、チームにおけるコミュニケーションなどは転職した現在にも役立っていると感じています。';
   const webEngineerComment =
     '入社してから現在までフルスタックエンジニアとして、webから誰でもECサイトを簡単に構築し展開できる自社サービスの開発を行ってきました。また、サブリーダとして新卒の育成や開発メンバーへの設計・実装・テストにおける指導を経験しました。';
   return (
@@ -23,11 +23,11 @@ export default function Home() {
             <div className="p-2 md:w-8/12">
               <VideoPlayer videoUrl="https://www.youtube.com/embed/j8VN_RhkdCQ?si=znTbFe3uqHfyximi" />
               <VideoSummaries />
-              <div className="md:flex items-center w-full mb-2">
-                <div className="md:w-3/5">
+              <div className="sm:flex items-center w-full mb-2">
+                <div className="sm:w-3/5">
                   <ChannelOnerLabel />
                 </div>
-                <div className="flex space-x-4 my-2 md:w-2/5 md:justify-end">
+                <div className="flex space-x-2 my-2 sm:w-2/5 sm:justify-end">
                   <AssessmentIcons />
                 </div>
               </div>
@@ -66,7 +66,7 @@ export default function Home() {
               </CommentProvider>
             </div>
             <div className="p-2 md:w-4/12">
-              <h2 className="py-4 text-lg font-bold">個人開発</h2>
+              <h2 className="mb-2 text-lg font-bold">個人開発</h2>
               <MyProjectCard
                 iconPath="/NetflixExtension.png"
                 title="Make More MyList in Netflix"

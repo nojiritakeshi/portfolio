@@ -33,11 +33,11 @@ const MyProjectCard: React.FC<MyProjectCardProps> = ({
           href={link}
           target="_blank"
           rel="noopener noreferrer"
-          className="text-lg font-semibold"
+          className="text-lg font-semibold hover:underline"
         >
           {title}
+          <OpenInNew fontSize="small" className="ml-1" />
         </NextLink>
-        <OpenInNew fontSize="small" />
       </div>
       <p className="text-gray-600 mt-2">{description}</p>
       <div className="flex flex-wrap mt-2">

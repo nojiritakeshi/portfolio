@@ -29,12 +29,12 @@ const OverviewColomn: React.FC = () => {
         </p>
         <p>
           <span className="text-blue-600 pr-2">2020/04</span>
-          プログラミングに出会う
+          プログラミングをはじめる
         </p>
         <p>
           <span className="text-blue-600 pr-2">2022/04</span>
           <NextLink href="https://e-ize.jp" target="_blank">
-            株式会社イーゼに入社
+            <span className="hover:underline">株式会社イーゼ</span>に入社
           </NextLink>
         </p>
         <p>

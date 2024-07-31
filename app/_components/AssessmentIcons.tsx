@@ -1,27 +1,31 @@
+import NextLink from 'next/link';
 import Share from '@mui/icons-material/Share';
-import ThumbUp from '@mui/icons-material/ThumbUp';
-import ThumbDown from '@mui/icons-material/ThumbDown';
+import XIcon from '@mui/icons-material/X';
+import CopyAllSharp from '@mui/icons-material/ContentCopy';
+import GitHubIcon from '@mui/icons-material/GitHub';
+
+// Goodアイコンとかいらないかも。それよりGithubリンクや共有ボタンだけでいいかも
 
 const AssessmentIcons: React.FC = () => {
   return (
     <>
       <div className="flex items-center">
-        <span className="border rounded-full p-1">
-          <ThumbUp className="text-xl text-black-500" />
-        </span>
-        <span className="ml-2 text-base">1998</span>
+        <NextLink
+          href="https://github.com/nojiritakeshi/portfolio"
+          className="border rounded-full p-1"
+          target="_blank"
+        >
+          <GitHubIcon className="text-xl text-black-500" />
+        </NextLink>
       </div>
       <div className="flex items-center">
-        <span className="border rounded-full p-1">
-          <ThumbDown className="text-black-500" />
-        </span>
-        <span className="ml-2 text-base">08</span>
-      </div>
-      <div className="flex items-center">
-        <span className="border rounded-full p-1">
-          <Share className="text-black-500" />
-        </span>
-        <span className="ml-2 text-base">09</span>
+        <NextLink
+          href="https://x.com/jsotakebmx"
+          className="border rounded-full p-1"
+          target="_blank"
+        >
+          <XIcon className="text-black-500" />
+        </NextLink>
       </div>
     </>
   );
