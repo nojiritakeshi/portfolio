@@ -4,6 +4,7 @@ import { Noto_Sans_JP } from 'next/font/google';
 import { AppRouterCacheProvider } from '@mui/material-nextjs/v14-appRouter';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import './globals.css';
+import { GoogleTagManager } from '@next/third-parties/google';
 
 const inter = Noto_Sans_JP({ subsets: ['cyrillic'] });
 
@@ -19,6 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <GoogleTagManager gtmId="G-6W32E7604P" />
       <body className={inter.className}>
         <header className="z-50 fixed top-0 left-0 right-0 flex items-center justify-between py-3 px-8 border-b border-gray-300 bg-white main-header">
           <NextLink href="/">
