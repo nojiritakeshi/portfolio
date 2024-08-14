@@ -20,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <GoogleTagManager gtmId="G-6W32E7604P" />
+      <GoogleTagManager gtmId="GTM-MLFN75TR" />
       <body className={inter.className}>
         <header className="z-50 fixed top-0 left-0 right-0 flex items-center justify-between py-3 px-8 border-b border-gray-300 bg-white main-header">
           <NextLink href="/">
