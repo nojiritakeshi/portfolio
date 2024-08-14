@@ -2,7 +2,6 @@ import VideoPlayer from './_components/VideoPlayer';
 import VideoSummaries from './_components/VideoSummaries';
 import ChannelOnerLabel from './_components/ChannelOnerLabel';
 import OverviewColomn from './_components/OverviewColomn';
-import AssessmentIcons from './_components/AssessmentIcons';
 import MyProjectCard from './_components/MyProjectCard';
 import { AvatarIcon } from './_components/AvatarIcon';
 import CommentInput from './_components/CommentInput';
@@ -26,9 +25,6 @@ export default function Home() {
               <div className="sm:flex items-center w-full mb-2">
                 <div className="sm:w-3/5">
                   <ChannelOnerLabel />
-                </div>
-                <div className="flex space-x-2 my-2 sm:w-2/5 sm:justify-end">
-                  <AssessmentIcons />
                 </div>
               </div>
               <OverviewColomn />
@@ -78,7 +74,7 @@ export default function Home() {
                 iconPath="/omoidemeisho.png"
                 title="おもいでメイショ"
                 link=""
-                description="画像に点数、コメント、住所などを設定しアルバム管理できるモバイルアプリを個人開発しました。現在は諸般の事情により非公開となっています。"
+                description="画像に点数、コメント、住所などを設定しアルバム管理できるモバイルアプリを個人開発しました。現在は非公開となっています。"
                 tags={['ReactNative', 'TypeScript', 'Firebase', 'Android']}
               />
               <MyProjectCard

@@ -21,7 +21,7 @@ const OverviewColomn: React.FC = () => {
         <p>2017年 4月 18歳時点</p>
         <p>
           <span className="text-blue-600 pr-2">04/03</span>
-          某政令指定都市で消防士として社会人スタート
+          京都市消防局で消防士として社会人スタート
         </p>
         <p>
           <span className="text-blue-600 pr-2">2020/02</span>
@@ -42,17 +42,6 @@ const OverviewColomn: React.FC = () => {
           自社サービスの設計・開発
         </p>
         <p className="my-6">Youtube風に作成したポートフォリオです。</p>
-        <p className="mt-6 mb-1">SNSのフォローはこちらから</p>
-        <span className="bg-gray-200 rounded-lg px-2">
-          <NextLink
-            href="https://x.com/jsotakebmx"
-            target="_blank"
-            className="text-sm font-semibold"
-          >
-            <XIcon style={{ fontSize: 12 }} className="w-2" />
-            <span> / @jsotakebmx</span>
-          </NextLink>
-        </span>
         <p className="mt-6 mb-1">動画の生成元:</p>
         <NextLink
           href="https://ai.invideo.io/"

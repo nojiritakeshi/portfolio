@@ -9,11 +9,11 @@ const ChannelOnerLabel: React.FC = () => {
   return (
     <div className="flex items-center justify-between ">
       <div className="flex items-center space-x-4">
-        <NextLink href="https://x.com/jsotakebmx" target="_blank">
+        <NextLink href="https://github.com/nojiritakeshi" target="_blank">
           <AvatarIcon src="/twitterIcon.jpg" />
         </NextLink>
         <NextLink
-          href="https://x.com/jsotakebmx"
+          href="https://github.com/nojiritakeshi"
           target="_blank"
           className="text-xl font-semibold"
         >
@@ -22,7 +22,7 @@ const ChannelOnerLabel: React.FC = () => {
       </div>
       <div className="flex">
         <NextLink
-          href="https://x.com/jsotakebmx"
+          href="https://github.com/nojiritakeshi"
           target="_blank"
           className="items-center text-white bg-black text-center align-center py-2 px-4 rounded-md text-sm h-10 w-28"
         >
