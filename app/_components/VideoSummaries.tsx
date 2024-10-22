@@ -1,6 +1,4 @@
 import React from 'react';
-import FavoriteIcon from '@mui/icons-material/Favorite';
-import CalendarMonth from '@mui/icons-material/CalendarMonth';
 
 const VideoSummaries: React.FC = () => {
   // 1998年生まれから現在の年齢を計算
