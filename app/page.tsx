@@ -58,6 +58,13 @@ export default function Home() {
                       'AWS'
                     ]}
                   />
+                  {/* next... 転職を暗に示す */}
+                  <Comment
+                    avatarUrl="/job_programmer.png"
+                    username="Next..."
+                    comment="...？"
+                    tags={['React', 'Next.js', 'TypeScript', 'Ruby on Rails']}
+                  />
                 </div>
               </CommentProvider>
             </div>

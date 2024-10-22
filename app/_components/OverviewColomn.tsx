@@ -29,7 +29,7 @@ const OverviewColomn: React.FC = () => {
         </p>
         <p>
           <span className="text-blue-600 pr-2">2020/04</span>
-          プログラミングをはじめる
+          プログラミングをはじめる、はまる
         </p>
         <p>
           <span className="text-blue-600 pr-2">2022/04</span>
