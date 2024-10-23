@@ -41,6 +41,10 @@ const OverviewColomn: React.FC = () => {
           <span className="text-blue-600 pr-2">~ 2024/04</span>
           自社サービスの設計・開発
         </p>
+        <p>
+          <span className="text-blue-600 pr-2">2024/04 ~</span>
+          サブリーダー、自社サービスの設計・開発
+        </p>
         <p className="my-6">Youtube風に作成したポートフォリオです。</p>
         <p className="mt-6 mb-1">動画の生成元:</p>
         <NextLink
