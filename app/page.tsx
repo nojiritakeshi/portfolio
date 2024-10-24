@@ -75,7 +75,7 @@ export default function Home() {
                 title="Make More MyList in Netflix"
                 link="https://chromewebstore.google.com/detail/make-more-mylist-in-netfl/bicnagkkmhehedgogcopdadkakldblfk"
                 description="Netflixのマイリストをより快適にするためのGoogleChrome拡張機能を開発しました。より使いやすいアイデアが浮かべば都度アップデートしています。"
-                tags={['Vue.js', 'TypeScript', 'pinia']}
+                tags={['Vue3', 'TypeScript', 'pinia', 'ChromeExtension']}
               />
               <MyProjectCard
                 iconPath="/omoidemeisho.png"
