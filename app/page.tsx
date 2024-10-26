@@ -42,7 +42,6 @@ export default function Home() {
                     comment={fireFighterComment}
                     tags={['やる気', '情熱']}
                   />
-                  {/* Java JavaScript Spring Boot Vue.js Nuxt.js MySQL Docker AWS */}
                   <Comment
                     avatarUrl="/job_programmer.png"
                     username="株式会社イーゼ(Webエンジニア)"
@@ -58,7 +57,6 @@ export default function Home() {
                       'AWS'
                     ]}
                   />
-                  {/* next... 転職を暗に示す */}
                   <Comment
                     avatarUrl="/job_programmer.png"
                     username="Next..."
