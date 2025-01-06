@@ -20,6 +20,22 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link
+          rel="icon"
+          type="image/png"
+          href="/favicon-32x32.png"
+          sizes="32x32"
+        />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <link rel="shortcut icon" href="/favicon.ico" />
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="/apple-touch-icon.png"
+        />
+        <link rel="manifest" href="/site.webmanifest" />
+      </head>
       <GoogleTagManager gtmId="GTM-MLFN75TR" />
       <body className={inter.className}>
         <header className="z-50 fixed top-0 left-0 right-0 flex items-center justify-between py-3 px-8 border-b border-gray-300 bg-white main-header">
