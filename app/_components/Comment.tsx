@@ -1,12 +1,15 @@
 import React from 'react';
 import Image from 'next/image';
 import config from '../../next.config.mjs';
+import Link from 'next/link';
+import OpenInNew from '@mui/icons-material/OpenInNew';
 const BASE_PATH = config.basePath ? config.basePath : '';
 
 type CommentProps = {
   avatarUrl?: string;
   username?: string;
   comment: string;
+  url?: string;
   tags?: string[];
 };
 
@@ -14,6 +17,7 @@ const Comment: React.FC<CommentProps> = ({
   avatarUrl,
   username = 'unknown',
   comment,
+  url = '',
   tags = []
 }) => {
   return (
@@ -23,11 +27,23 @@ const Comment: React.FC<CommentProps> = ({
         width={32}
         src={`${BASE_PATH}${avatarUrl}`}
         alt="Avatar"
-        className="w-10 h-10 object-cover rounded-full"
+        className="w-10 h-10 object-contain rounded-full"
       />
       <div>
         <div className="flex items-center">
-          <span className="font-semibold">@{username}</span>
+          <Link
+            target="_blank"
+            rel="noopener noreferrer"
+            href={url}
+            className="font-semibold hover:underline"
+          >
+            @{username}
+            <OpenInNew
+              fontSize="small"
+              className="ml-1"
+              style={{ fontSize: '14px' }}
+            />
+          </Link>
         </div>
         <p>{comment}</p>
         <div className="flex flex-wrap mt-1">

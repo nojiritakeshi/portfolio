@@ -13,7 +13,9 @@ export default function Home() {
   const fireFighterComment =
     '2017年~2022年3月末までの約5年間、消防士として働いていました。細部にこだわること、妥協しないこと、チームにおけるコミュニケーションなどは転職した現在にも役立っていると感じています。';
   const webEngineerComment =
-    '入社してから現在までフルスタックエンジニアとして、webから誰でもECサイトを簡単に構築し展開できる自社サービスの開発を行ってきました。また、サブリーダとして新卒の育成や開発メンバーへの設計・実装・テストにおける指導を経験しました。';
+    '入社してから2024年12月までフルスタックエンジニアとして、webから誰でもECサイトを簡単に構築し展開できる自社サービスの開発を行ってきました。また、サブリーダとして新卒の育成や開発メンバーへの設計・実装・テストにおける指導を経験しました。';
+  const forstartupsComment =
+    '現在、フォースタートアップス株式会社にてエンジニアとして働いています。Next.js、TypeScript、Ruby on Railsを用いた開発を行っています。';
   return (
     <main className="pt-16 xl:px-32">
       <div className="w-hull text-sm ml-3">
@@ -30,7 +32,7 @@ export default function Home() {
               <OverviewColomn />
               <CommentProvider>
                 <div>
-                  <h2 className="py-4 text-xl font-bold">2件のケイレキ</h2>
+                  <h2 className="py-4 text-xl font-bold">3件のケイレキ</h2>
                   <div className="sm:flex">
                     <AvatarIcon src="/job_programmer.png" />
                     <CommentInput />
@@ -38,13 +40,15 @@ export default function Home() {
                   <WrittenComments />
                   <Comment
                     avatarUrl="/car_shoubousya_front.png"
-                    username="消防士"
+                    username="京都市消防局"
                     comment={fireFighterComment}
+                    url="https://www.city.kyoto.lg.jp/shobo/index.html"
                     tags={['やる気', '情熱']}
                   />
                   <Comment
                     avatarUrl="/job_programmer.png"
-                    username="株式会社イーゼ(Webエンジニア)"
+                    username="株式会社イーゼ"
+                    url="https://e-ize.jp"
                     comment={webEngineerComment}
                     tags={[
                       'Java',
@@ -58,9 +62,10 @@ export default function Home() {
                     ]}
                   />
                   <Comment
-                    avatarUrl="/job_programmer.png"
-                    username="Next..."
-                    comment="...？"
+                    avatarUrl="/4star.svg"
+                    username="for Startups, Inc. / フォースタートアップス株式会社"
+                    comment={forstartupsComment}
+                    url="https://www.forstartups.com/"
                     tags={['React', 'Next.js', 'TypeScript', 'Ruby on Rails']}
                   />
                 </div>
